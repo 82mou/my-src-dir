@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+}
+br {
+    font-size: 0;
+}
+
+::selection {
+    background: $gray;
+    color: $white;
+}
+
+html {
+    font-size: 62.5%;
+    min-height: 100%;
+    /*
+    width: 100%;
+    */
+}
+
+body {
+    font-size: $base-font-size;
+    font-family: $font;
+    -webkit-font-smoothing: $font-smoothing;
+    font-smoothing: $font-smoothing;
+    text-rendering: $text-rendering;
+    background-color: $white;
+    color: $base-font-color;
+    width: 100%;
+    letter-spacing: $base-letter-spacing;
+	&.en {
+		font-family: $font-en;
+		word-break: normal;
+	}
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: $font;
+}
+
+input,
+button,
+select,
+textarea,
+a,
+div,
+aside {
+    &:focus {
+        outline: none;
+    }
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.for-no-js,
+.for-old {
+    text-align: center;
+    width: 100%;
+    background: $black;
+    color: $white;
+    height: 40px;
+    line-height: 40px;
+    z-index: $max-z + 1;
+}
+
+.for-old {
+    display: none;
+
+    .lt-ie9 & {
+        display: block;
+    }
+}
+
+.browser-ie {
+    font-family: $font;
+	input,
+	button,
+	select,
+	textarea {
+		font-family: $font;
+	}
+}

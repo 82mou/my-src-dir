@@ -1,0 +1,17 @@
+/*
+* 変数用scss(カラーコード以外)
+*/
+
+//antialiased,subpixel-antialiased,none
+$font-smoothing: antialiased;
+
+//auto,optimizeSpeed,optimizeLegibility,geometricPrecision
+$text-rendering: auto;
+$base-background-color: #fff;
+
+//z-index
+$max-z: 10;
+
+//media-query
+$break-tablet: 1024px;
+$break-sp: 768px;
